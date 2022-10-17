@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import civilizationsSlice from './slice';
+import characterSlice from './slice';
 
 export const store = configureStore({
   reducer: {
-    civilizations: civilizationsSlice,
+    characters: characterSlice,
   },
 });
 

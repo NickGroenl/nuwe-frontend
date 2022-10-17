@@ -1,14 +1,14 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Civilizations } from '../resources/types';
+import { Characters } from '../resources/types';
 import { RootState } from './store';
 
-const initialState: Civilizations[] = []
+const initialState: Characters[] = []
 
 const storeSlice = createSlice({
-  name: 'civilizations',
+  name: 'characters',
   initialState,
   reducers: {
-    setStore(state, action: PayloadAction<Civilizations[]>) {
+    setStore(state, action: PayloadAction<Characters[]>) {
       return state = action.payload;
     },
   },
